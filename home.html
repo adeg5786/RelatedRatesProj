@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Related Rates Project</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<h1 style="font-family:Tahoma">Santa Claus needs your help!</h1>
+<body> 
+    <b> 
+        
+        
+        
+        <p style="font-family:verdana">It's Christmas Eve and Rudolph is helping Santa Claus by guiding his sleigh. However, Christmas is doomed! After encountering 
+            a magical Christmas curse, Santa calls to you to solve these Related Rates in order to save the Holidays. Are you up to it?
+        </p>  
+        
+        <label for="options">Select a problem to solve:</label>
+        <select name="options" id="options">
+            <optgroup label="Problems">
+              <option value = "1">A</option>
+              <option value = "2">B</option>
+              <option value = "3">C</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <div id="1" style="display: block; font-family:verdana">a.) Rudolph realizes his spherical bright-red nose is shrinking! 
+            The only way to save him is to calculate the rate at which the volume of his nose is shrinking at, given his current radius (10 inches) and the rate that the radius is decreasing (4 inches per second). 
+            Find the rate at which the radius of his nose is shrinking and the rate the surface area is shrinking at the same instant. <br> <br> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTywdOQ1BgTgHSAue4KtfXEy_xy_YvMBV6kb85XEgjb4HxHkBlYsP8GfBmJhEd_OuruI6c:https://rare.us/wp-content/uploads/sites/3/2020/12/The-Forgotten-Murder-Scene-in-_Rudolph-the-Red-Nosed-Reindeer_.jpg%3Fw%3D1200%26h%3D800%26crop%3D1&usqp=CAU" alt="Rudolph"></div>
+        <div id="2" style="display: block; font-family:verdana">b.) The sleigh has lost Rudolph's nose! Now Santa and the rest of the reindeer trek through icy hills. Suppose a large slanted piece of ice (15 meters) is leaning against the side of a vertical building. 
+            If Santa and his reindeer were to go up this ice, it would slide down the building, also destroying the building from the top of the roof. 
+            Since the sides are changing, what is the rate of change of the area given the length of a short leg (33 yds.) and a long leg (44 yds.). They are also decreasing at
+            -6 yards per second and -8 yards per second, respectively. <br> <br> <img src="https://mail.google.com/mail/u/0?ui=2&ik=ea81cdb320&attid=0.1&permmsgid=msg-a:r-8520871135387013426&th=17ce753a94733076&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8a_HDA3HHsDZMt_nwfgwygOiXYzhLrklIwyk9YZ4c6NcLuLQ071k1d4CydWCILgJgLFintyDa3ZJ3LmoAVZ1hyJeAdAnfwYSSE_VW4PjginjiwdJ3YU72qfdo&disp=emb&realattid=17ce7539bf07c362c2f2" alt="The Thing" style="width:400px;height:300px;">></div>
+        <div id="3" style="display: block; font-family:verdana">c.) After finding out the nose has fallen down a shrinking cylindrical chimney, Santa decides to come down the chimney to save it.
+            The radius of a chimney is decreasing at a constant rate of 3 feet per second. The volume remains a constant 2598 cubic feet. At the instant when the height of the cylinder is 8 feet, what is the rate of change of the height?
+            <br> <br> <img src="https://www.lovethispic.com/uploaded_images/50501-Santa-Going-Down-A-Chimney.jpg" alt="Santa" style="width:400px;height:500px;"></div>
+        
+        <script type="text/javascript">
+            document.getElementById('options').onchange = function() {
+                var i = 1;
+                var myDiv = document.getElementById(i);
+                while(myDiv) {
+                    myDiv.style.display = 'none';
+                    myDiv = document.getElementById(++i);
+                }
+                document.getElementById(this.value).style.display = 'block';
+            };
+            </script>
+ 
+        
+       
+    
+        
+            </b>
+    
+</body>
+</html>
